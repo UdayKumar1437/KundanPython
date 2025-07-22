@@ -8,8 +8,55 @@ const anc = document.getElementsByTagName("a")[0]
 // Element.style.property = value
 element.style.color = "blue"
 
-element1.setAttribute("class","uday1")
+element1.setAttribute("class", "uday1")
 
 element1.className = "kundan"
-anc.href  = "https://www.udaykumar.tech"
-console.log(element1);
+anc.href = "https://www.udaykumar.tech"
+// console.log(element1);
+
+
+const newH1 = document.createElement("h1")
+const newP = document.createElement("p")
+const udayP = document.createElement("p")
+udayP.innerText = "Uday Kumar"
+newP.innerText = "Kundan H1 tag"
+newH1.appendChild(newP)
+newH1.replaceChild(udayP, newP)
+const body = document.getElementsByTagName("body")[0]
+body.appendChild(newH1)
+// body.removeChild(newH1)
+
+const list = document.createElement("ul")
+const l1 = document.createElement("li")
+const l2 = document.createElement("li")
+l2.innerText = "list 2"
+l1.innerText = "List 1"
+list.appendChild(l1)
+list.appendChild(l2)
+
+body.appendChild(list)
+
+// console.log(newH1);
+
+
+const uday = document.querySelector("#ptag #idtag p")
+console.log(uday);
+
+
+
+const button = document.querySelector("button")
+
+button.addEventListener("click", () => {
+    console.log("I'm kundan");
+
+})
+
+button.addEventListener("mouseover", () => {
+    console.log("uday");
+
+})
+
+button.addEventListener("mouseleave", () => {
+    console.log("dinesh");
+
+})
