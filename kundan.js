@@ -40,23 +40,44 @@ body.appendChild(list)
 
 
 const uday = document.querySelector("#ptag #idtag p")
+
 console.log(uday);
 
 
 
-const button = document.querySelector("button")
+const button = document.getElementsByTagName("button")[0]
+// button.addEventListener("click",()=>
+// {
+//     alert("ok")
+// })
 
-button.addEventListener("click", () => {
-    console.log("I'm kundan");
+button.addEventListener("mouseover",()=>
+{
+    button.style.backgroundColor = "yellow"
+    button.style.cursor = "pointer"
+}
+)
 
+button.addEventListener("mouseout",()=>
+{
+    button.style.backgroundColor = ""
+}
+)
+
+button.addEventListener("dblclick",()=>
+{
+    alert("Kundanika")
 })
 
-button.addEventListener("mouseover", () => {
-    console.log("uday");
-
+const inp = document.getElementsByTagName("input")[0]
+inp.addEventListener("change",(event)=>
+{
+    console.log(event.target.value);
+    
 })
 
-button.addEventListener("mouseleave", () => {
-    console.log("dinesh");
-
+inp.addEventListener("keypress",()=>
+{
+    console.log("kundan");
+    
 })
