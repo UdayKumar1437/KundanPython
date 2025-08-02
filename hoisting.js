@@ -39,11 +39,11 @@
 // if (a===undefined)
 // {
 //     console.log("a is undefined");
-    
+
 // }
 // else{
 //     console.log("a is not defined");
-    
+
 // }
 
 
@@ -55,7 +55,7 @@
 //     function c()
 //     {
 //         // console.log(a);
-        
+
 //         // var b = 1000
 //         d()
 //         function d()
@@ -82,7 +82,7 @@
 //     const a = 10
 //     var b = 100
 //     console.log(a);
-    
+
 // }
 // console.log(b);
 
@@ -90,25 +90,42 @@
 // {
 //     console.log("Kundanika");
 //     console.log("Uday");
-    
+
 // }
 
-let b = 100
-{
-    var a = 10
-    let b = 20
-    const c = 30
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
+// let b = 100
+// {
+//     var a = 10
+//     let b = 20
+//     const c = 30
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
 
-console.log(b);
 // console.log(b);
-// console.log(c);
-for(let i = 0;i<=10;i++)
-{
-    console.log(i);
-    
-}
+// // console.log(b);
+// // console.log(c);
+// for(let i = 0;i<=10;i++)
+// {
+//     console.log(i);
+
+// }
+
+
+// setTimeout(()=>
+// {
+// //    window.location.reload()
+
+// },1000)
+
+let a = 1
+
+setInterval(() => {
+a +=1
+    console.log(a);
+
+}, 1000);
+
+
 
