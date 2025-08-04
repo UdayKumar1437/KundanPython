@@ -119,13 +119,77 @@
 
 // },1000)
 
-let a = 1
+// let a = 1
 
-setInterval(() => {
-a +=1
-    console.log(a);
+// setInterval(() => {
+// a +=1
+//     console.log(a);
 
-}, 1000);
+// }, 1000);
 
+
+
+// function x() {
+//     var a = 10
+
+//     return function y() {
+//         console.log(a);
+//     }
+// }
+
+// var z = x()
+// console.log(z);
+// z()
+
+
+// function x() {
+//     for (let i = 1; i <= 5; i++) {
+//         setTimeout(function () {
+//             console.log(i);
+
+//         }, i * 1000)
+//     }
+
+//     console.log("Kundanika Madireddy");
+
+// }
+
+// x()
+
+
+
+// Function Statement
+// a()
+// b()
+function a() {
+    console.log("a called");
+}
+a()
+
+// Function Expression aka Function Declarations
+
+var b = function (param1, param2) {
+    param1()
+    param2()
+    // console.log("b Called", param1, param2);
+
+}
+b(a, function () {
+    console.log("Kundan");
+
+})
+
+// arrow function
+var a = ()=>
+{
+
+}
+
+//  Anonymous Function
+
+// function ()
+// {
+
+// }
 
 
