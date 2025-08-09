@@ -193,15 +193,15 @@
 // // }
 
 
-setTimeout(() => {
-    console.log("Kundanika",Date.now());
+// setTimeout(() => {
+//     console.log("Kundanika",Date.now());
 
-}, 10000);
+// }, 10000);
 
-setTimeout(() => {
-    console.log("Uday");
+// setTimeout(() => {
+//     console.log("Uday");
     
-}, 2000);
+// }, 2000);
 // Could be GET or POST/PUT/PATCH/DELETE
 // fetch('http://localhost:3001/test')
 // .then(res => res.json())
@@ -214,3 +214,85 @@ setTimeout(() => {
 // .then(console.log);
 
 /* { status: 'ok', method: 'GET' } */
+
+
+// Higher Order Functions
+// function x()
+// {
+//     console.log("Kundan");
+// }
+
+// function y(x)
+// {
+//     x()
+// }
+
+// y(x)
+
+
+const radius = [3,1,2,4]
+
+const area = (radius)=>
+{
+    return Math.PI*radius*radius
+}
+
+const circumference = (radius)=>
+{
+    return 2*Math.PI*radius
+}
+
+const diameter = (radius)=>
+{
+    return 2*radius
+}
+
+function calculate(radius,logic)
+{
+    const output = []
+    for (let rad of radius)
+    {
+        output.push(logic(rad))
+    }
+    return output
+}
+console.log(calculate(radius,area));
+console.log(calculate(radius,circumference));
+console.log(calculate(radius,diameter));
+
+
+
+
+const calculateArea = (radius) =>
+{
+    const output = []
+    for (let rad of radius)
+    {
+        output.push(Math.PI*rad*rad)
+    }
+    return output
+}
+
+console.log(calculateArea(radius));
+
+// const calculateCircumference = (radius)=>
+// {
+//     const output = []
+//     for (let rad of radius)
+//     {
+//         output.push(2*Math.PI*rad)
+//     }
+//     return output
+// }
+// console.log(calculateCircumference(radius));
+
+// const calculateDiameter = (radius)=>
+// {
+//     const output = []
+//     for (let rad of radius)
+//     {
+//         output.push(2*rad)
+//     }
+//     return output
+// }
+// console.log(calculateDiameter(radius));
